@@ -15,7 +15,7 @@ CREATE TABLE jobs (
     id SERIAL PRIMARY KEY NOT NULL,
     emp_ssn VARCHAR(30),
     company VARCHAR(30),
-    salary VARCHAR(30),
+    salary int,
     experience int,
     emp_id SERIAL NOT NULL,
     FOREIGN KEY (emp_ssn) REFERENCES employees(ssn)
